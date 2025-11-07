@@ -2,17 +2,14 @@
 
 This task evaluates the ability of LLMs to detect historically impossible events. As described in the paper, Task 3 consists of **two main variants**:
 
-1. **Variant 1: Innovation/Events Experiment** - Tests anachronism detection for technological innovations and activities (e.g., "Rode in an automobile while president", "Used generative AI while president")
-2. **Variant 2: Historical Figures Experiment** - Tests anachronism detection for overlapping timelines with historical figures (e.g., "George Washington received a letter from Napoleon Bonaparte")
+1. **Variant 1: Innovation/Events Experiment** - Tests anachronism detection for single timeline overlap (e.g., "Rode in an automobile while president", "Used generative AI while president")
+2. **Variant 2: Historical Figures Experiment** - Tests anachronism detection for overlapping timelines with multiple historical figures
 
 Additionally, this repository includes a third experiment:
 
 3. **Presidents Overlap Experiment** - Tests detection of chronological overlap between multiple presidents (e.g., "Were George Washington, John Adams, and Thomas Jefferson all alive at the same time?")
 
-## Variant 1: Innovation/Events Experiment
-
-**Paper Reference**: This corresponds to Variant 1 in the paper.
-
+## Variant 1
 Tests whether U.S. presidents could have performed certain activities during their presidency.
 
 ### Scripts
@@ -42,7 +39,7 @@ python evaluate.py --input results/task3_anachronism_detection/innovation_events
 
 **Paper Reference**: This corresponds to Variant 2 in the paper.
 
-Tests whether U.S. presidents could have received letters from historical figures (concept of overlapping timelines).
+Tests whether multiple U.S. presidents were all alive at the same time (concept of overlapping timelines).
 
 ### Scripts
 - `historical_figures/run_experiment.py` - Runs the main experiment
@@ -67,7 +64,7 @@ python evaluate.py --input results/task3_anachronism_detection/historical_figure
 
 **Note**: This experiment is not described in the paper but is included in this repository for completeness.
 
-Tests whether the LLM can determine if multiple U.S. presidents were all alive at the same time (chronological overlap).
+Tests whether the LLM can determine if multiple U.S. presidents could have received a letter from each other (chronological overlap).
 
 ### Scripts
 - `presidents_overlap/run_experiment.py` - Runs the main experiment
@@ -90,7 +87,7 @@ python evaluate.py --input results/task3_anachronism_detection/presidents_overla
 
 ## Experiment Design
 
-### Variant 1: Innovation/Events Experiment
+### Variant 1
 - **Batch Size**: 20 events per batch
 - **Experiment Types**:
   - 10 true + 10 false events (mixed)
@@ -101,7 +98,7 @@ python evaluate.py --input results/task3_anachronism_detection/presidents_overla
 - **Models**: GPT-4.1
 - **Description**: Tests whether U.S. presidents could have performed certain activities/innovations during their presidency (e.g., "Rode in an automobile while president", "Used generative AI while president")
 
-### Variant 2: Historical Figures Experiment
+### Variant 2
 - **Batch Size**: 20 events per batch
 - **Experiment Types**:
   - 10 true + 10 false events (mixed)
@@ -110,7 +107,7 @@ python evaluate.py --input results/task3_anachronism_detection/presidents_overla
 - **Batches per Type**: 100
 - **Total Events**: 6,000 (100 batches × 3 types × 20 events)
 - **Models**: GPT-4.1
-- **Description**: Tests whether U.S. presidents could have received letters from historical figures based on overlapping lifetimes (e.g., "George Washington received a letter from Napoleon Bonaparte")
+- **Description**: Tests whether multiple U.S. presidents were all alive at the same time based on overlapping lifetimes
 
 ### Presidents Overlap Experiment
 - **Batch Size**: 10 questions per batch
@@ -122,7 +119,7 @@ python evaluate.py --input results/task3_anachronism_detection/presidents_overla
 - **Batches per Type**: 100
 - **Total Questions**: 3,000 (100 batches × 3 types × 10 questions)
 - **Models**: GPT-4.1
-- **Description**: Tests whether the LLM can determine if multiple U.S. presidents were all alive at the same time (chronological overlap)
+- **Description**: Tests whether the LLM can determine if multiple U.S. presidents could have received a letter from each other (chronological overlap)
 
 ## Metrics
 
@@ -131,14 +128,6 @@ python evaluate.py --input results/task3_anachronism_detection/presidents_overla
 - **Recall**: Of actual "Possible"/"Yes", how many were predicted
 - **F1 Score**: Harmonic mean of precision and recall
 - **Confusion Matrix**: TP, FP, TN, FN counts
-
-## Summary of Variants
-
-| Variant | Paper Reference | Focus | Batch Size | Key Question |
-|---------|----------------|-------|------------|--------------|
-| **Variant 1: Innovation/Events** | ✓ Main paper | Technological anachronisms | 20 events | Could a president have performed this activity? |
-| **Variant 2: Historical Figures** | ✓ Main paper | Timeline overlap with figures | 20 events | Could a president have received a letter from this figure? |
-| **Presidents Overlap** | ✗ Not in paper | Multiple president lifetimes | 10 questions | Were these N presidents all alive at the same time? |
 
 Both Variant 1 and Variant 2 (as described in the paper) use the same three experiment types (mixed, all true, all false) and evaluate using the same metrics (accuracy, precision, recall, F1, confusion matrix).
 
