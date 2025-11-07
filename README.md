@@ -11,9 +11,9 @@ This work evaluates the temporal reasoning capabilities of Large Language Models
 1. **Task 1: Chronological Ordering** - Ordering US presidents chronologically
 2. **Task 2: Conditional Sorting** - Filtering presidents by criteria, then ordering chronologically
 3. **Task 3: Anachronism Detection** - Identifying whether historical events could have occurred during specific presidencies. As described in the paper, consists of two main variants:
-   - **Variant 1: Innovation/Events** - Tests anachronism detection for technological innovations and activities
-   - **Variant 2: Historical Figures** - Tests anachronism detection for overlapping timelines with historical figures
-   - *(Additional: Presidents Overlap experiment is also included in this repository)*
+   - **Variant 1** - Tests anachronism detection for single overlap
+   - **Variant 2** - Tests anachronism detection for overlapping timelines with historical figures
+   - *(Additional experiment is also included in this repository)*
 
 ## Models Evaluated
 
