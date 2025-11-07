@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+claude-env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# API Keys and secrets
+*.key
+*_key.txt
+.env
+.env.local
+
+# Experiment results and outputs
+data/gpt_outputs/
+results/
+outputs/
+*.json
+*.csv
+!data/*.csv  # Keep source data CSVs
+!**/ground_truth*.csv  # Keep ground truth files
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# PDFs (except paper)
+*.pdf
+!paper.pdf
+

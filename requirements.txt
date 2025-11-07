@@ -1,0 +1,26 @@
+# Core dependencies
+pandas>=1.5.0
+numpy>=1.21.0
+scipy>=1.9.0
+
+# Machine learning and evaluation
+scikit-learn>=1.0.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# API clients
+openai>=1.0.0
+anthropic>=0.18.0
+
+# String matching (for fuzzy matching in post-processing)
+fuzzywuzzy>=0.18.0
+python-Levenshtein>=0.12.0
+
+# Progress bars
+tqdm>=4.64.0
+
+# Path handling (usually included in Python 3.4+, but explicit for clarity)
+pathlib2>=2.3.7; python_version < '3.4'
+
