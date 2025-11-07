@@ -52,6 +52,16 @@ outputs/
 !data/*.csv  # Keep source data CSVs
 !**/ground_truth*.csv  # Keep ground truth files
 
+# Old experimental folders (keep locally, don't push to GitHub)
+week*/
+gpt5/
+consistency_check/
+random_baseline_analysis/
+single_experiment_run.py
+single_post_process.py
+evaluation.py
+GITHUB_SETUP.md
+
 # Logs
 *.log
 logs/
