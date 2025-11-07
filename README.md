@@ -29,9 +29,7 @@ chronollms-reproducible/
 │   ├── task1_chronological_ordering/    # Task 1: Basic chronological ordering
 │   ├── task2_conditional_sorting/       # Task 2: Filtering + ordering
 │   └── task3_anachronism_detection/     # Task 3: Anachronism detection
-├── evaluation/                          # Evaluation scripts and utilities
 ├── data/                                # Datasets and ground truth files
-├── scripts/                             # Shared utility scripts
 ├── requirements.txt                     # Python dependencies
 ├── LICENSE                              # MIT License
 └── README.md                            # This file
