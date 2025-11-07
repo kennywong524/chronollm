@@ -1,0 +1,44 @@
+name,birthdate,birth_day_of_week,birth_state,start_year,end_year
+George Washington,1732-02-22,Friday,Virginia,1789,1797
+John Adams,1735-10-30,Sunday,Massachusetts,1797,1801
+Thomas Jefferson,1743-04-13,Saturday,Virginia,1801,1809
+James Madison,1751-03-16,Tuesday,Virginia,1809,1817
+James Monroe,1758-04-28,Friday,Virginia,1817,1825
+John Quincy Adams,1767-07-11,Saturday,Massachusetts,1825,1829
+Andrew Jackson,1767-03-15,Sunday,South Carolina,1829,1837
+Martin Van Buren,1782-12-05,Thursday,New York,1837,1841
+William Henry Harrison,1773-02-09,Tuesday,Virginia,1841,1841
+John Tyler,1790-03-29,Monday,Virginia,1841,1845
+James K. Polk,1795-11-02,Monday,North Carolina,1845,1849
+Zachary Taylor,1784-11-24,Wednesday,Virginia,1849,1850
+Millard Fillmore,1800-01-07,Tuesday,New York,1850,1853
+Franklin Pierce,1804-11-23,Friday,New Hampshire,1853,1857
+James Buchanan,1791-04-23,Saturday,Pennsylvania,1857,1861
+Abraham Lincoln,1809-02-12,Sunday,Kentucky,1861,1865
+Andrew Johnson,1808-12-29,Thursday,North Carolina,1865,1869
+Ulysses S. Grant,1822-04-27,Saturday,Ohio,1869,1877
+Rutherford B. Hayes,1822-10-04,Friday,Ohio,1877,1881
+James A. Garfield,1831-11-19,Saturday,Ohio,1881,1881
+Chester A. Arthur,1829-10-05,Monday,Vermont,1881,1885
+Benjamin Harrison,1833-08-20,Tuesday,Ohio,1889,1893
+William McKinley,1843-01-29,Sunday,Ohio,1897,1901
+Theodore Roosevelt,1858-10-27,Wednesday,New York,1901,1909
+William Howard Taft,1857-09-15,Tuesday,Ohio,1909,1913
+Woodrow Wilson,1856-12-28,Sunday,Virginia,1913,1921
+Warren G. Harding,1865-11-02,Thursday,Ohio,1921,1923
+Calvin Coolidge,1872-07-04,Thursday,Vermont,1923,1929
+Herbert Hoover,1874-08-10,Monday,Iowa,1929,1933
+Franklin D. Roosevelt,1882-01-30,Monday,New York,1933,1945
+Harry S. Truman,1884-05-08,Thursday,Missouri,1945,1953
+Dwight D. Eisenhower,1890-10-14,Tuesday,Texas,1953,1961
+John F. Kennedy,1917-05-29,Tuesday,Massachusetts,1961,1963
+Lyndon B. Johnson,1908-08-27,Thursday,Texas,1963,1969
+Richard Nixon,1913-01-09,Thursday,California,1969,1974
+Gerald Ford,1913-07-14,Monday,Nebraska,1974,1977
+Jimmy Carter,1924-10-01,Wednesday,Georgia,1977,1981
+Ronald Reagan,1911-02-06,Monday,Illinois,1981,1989
+George H. W. Bush,1924-06-12,Thursday,Massachusetts,1989,1993
+Bill Clinton,1946-08-19,Monday,Arkansas,1993,2001
+George W. Bush,1946-07-06,Saturday,Connecticut,2001,2009
+Barack Obama,1961-08-04,Friday,Hawaii,2009,2017
+Joe Biden,1942-11-20,Friday,Pennsylvania,2021,2025 

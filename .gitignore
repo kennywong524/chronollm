@@ -48,8 +48,11 @@ data/gpt_outputs/
 results/
 outputs/
 *.json
+# CSV files - ignore all except source data CSVs
 *.csv
-!data/*.csv  # Keep source data CSVs
+!data/us_presidents.csv
+!data/us_presidents_with_states.csv
+!data/30_wide_scale_historical_events.csv
 !**/ground_truth*.csv  # Keep ground truth files
 
 # Old experimental folders (keep locally, don't push to GitHub)
