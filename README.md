@@ -1,7 +1,6 @@
 # Do Large Language Models Understand Chronology?
 
-This repository contains code and data for reproducing the experiments described in "Do Large Language Models Understand Chronology?" presented at AAAI-26 (AAAI 2026 Student Abstract).
-
+This repository contains code and data for reproducing the experiments described in "Do Large Language Models Understand Chronology?" presented at AAAI-26
 **⚠️ Note: This repository is currently under active development and is not yet finalized. The code and documentation may be subject to changes.**
 
 ## Overview
